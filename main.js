@@ -35,3 +35,4 @@ function createword(arr){
 function combine(){
     createword(addword());
 }
+ 
