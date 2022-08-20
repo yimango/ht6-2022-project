@@ -1,0 +1,12 @@
+{
+    "name": "French Helper",
+    "description": "helps with developing french skills",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [],
+    "content_scripts": [
+        {
+
+        }
+    ]
+}
