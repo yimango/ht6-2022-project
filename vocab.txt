@@ -1,0 +1,58 @@
+701.	parole	speech, word	noun
+702.	triste	sad	adjective
+703.	honte	shame	noun
+704.	rouge	red	adjective
+705.	dégager	to free; to clear; to radiate	verb
+706.	soirée	evening, party	noun
+707.	dangereux	dangerous	adjective
+708.	armée	army	noun
+709.	filer	to spin; to take off; to go off, to leave	verb
+710.	risquer	to risk	verb
+711.	dos	back, spine	noun
+712.	appel	call, appeal	noun
+713.	visite	visit	noun
+714.	mener	to take; to lead, guide, manage	verb
+715.	fleur	flower, blossom	noun
+716.	attaquer	to attack	verb
+717.	coin	corner, spot	noun
+718.	prince	prince	noun
+719.	pire	worse	adjective
+720.	bordel	brothel; bloody/goddamn mess	noun
+721.	professeur	teacher, professor	noun
+722.	fumer	to smoke	verb
+723.	répéter	to repeat; to go over, rehearse	verb
+724.	habitude	habit, practice; french.languagedaily.com	noun
+725.	signer	to sign	verb
+726.	ficher	to file, put on file	verb
+727.	mériter	to deserve, be worth; french.languagedaily.com	verb
+728.	réponse	response, answer, reply	noun
+729.	rejoindre	to meet up; to join, rejoin; to go back to	verb
+730.	discuter	to question, dispute	verb
+731.	village	village	noun
+732.	pourtant	yet	adverb
+733.	avancer	to move forward, advance	verb
+734.	connerie	stupidity	noun
+735.	reposer	to rest, to have a rest	verb
+736.	échapper	to escape, get away, slip, run away	verb
+737.	forme	form, shape	noun
+738.	bruit	noise, sound; rumour	noun
+739.	chacun	each, everyone	indefinite pronoun
+740.	diable	devil	noun
+741.	exemple	example	noun
+742.	charger	to charge, load	verb
+743.	chat	cat	noun
+744.	ennemi	enemy	noun
+745.	gamin	kid, child (see #674)	noun
+746.	rendez-vous	appointment	noun
+747.	debout	standing, standing up	adverb
+748.	obliger	to oblige	verb
+749.	trou	hole, gap, deficit	noun
+750.	accompagner	to go with, accompany	verb
+751.	fenêtre	window; languagedaily dot com	noun
+752.	oser	to dare	verb
+753.	impression	impression	noun
+754.	intérieur	inside (inner surface), interrior	noun
+755.	bouche	mouth	noun
+756.	ligne	line, course, service	noun
+757.	absolument	absolutely	adverb
+758.	doux	soft, mild, gentle	adjective
