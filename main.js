@@ -50,6 +50,9 @@ function createword(arr){
     if(!words.includes(obj.word)){
         wordbank.push(obj)
         words.push(obj.word)
+        alert("Word added")
+    }else{
+        alert("Word already in list")
     }
     chrome.storage.sync.set({'wordobjects': wordbank}, function(){
         console.log("success")
@@ -77,7 +80,10 @@ function wordsearch(){
     if(words.includes(word)){
         words.splice(words.indexOf(word), 1)
         wordbank.splice(words.indexOf(word), 1)
-    }
+        alert("Word has been removed")
+    }else{
+        alert("Word not found")
+        }
 
     chrome.storage.sync.set({'wordobjects': wordbank}, function(){
         console.log("success")
