@@ -14,16 +14,14 @@ for line in myfile:
     
     linelist2 = ''.join(linelist2)
     linelist2 = linelist2.split('\t')
-    #wordlist.append(linelist2)
     
     worddict['word'] = linelist2[0]
     worddict['trans'] = linelist2[1]
     worddict['use'] = linelist2[2]
 
     biglist.append(worddict)
-    #print(worddict)
-
     linelist2=[]
+    worddict={}
 
 print(biglist)
 myfile.close()
