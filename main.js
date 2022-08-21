@@ -98,9 +98,9 @@ function wordoftheday(){
     var i = rando%wordsstrings.length;
     var j = 3 * i % wordsstrings.length;
     var k = 12 * i % wordsstrings.length;
-    document.getElementById("wordoftheday").appendChild(document.createTextNode("Le 1er du jour: " + allwords[i].word + "," + allwords[i].use + ". Anglais: " + allwords[i].trans + "."))
-    document.getElementById("wordoftheday").appendChild(document.createTextNode("Le 2e du jour: " + allwords[j].word + "," + allwords[j].use + ". Anglais: " + allwords[j].trans + "."))
-    document.getElementById("wordoftheday").appendChild(document.createTextNode("Le 3e du jour: " + allwords[k].word + "," + allwords[k].use + ". Anglais: " + allwords[k].trans + "."))
+    document.getElementById("word1").appendChild(document.createTextNode(allwords[i].word + "," + allwords[i].use + ". Anglais: " + allwords[i].trans + "."))
+    document.getElementById("word2").appendChild(document.createTextNode(allwords[j].word + "," + allwords[j].use + ". Anglais: " + allwords[j].trans + "."))
+    document.getElementById("word3").appendChild(document.createTextNode(allwords[k].word + "," + allwords[k].use + ". Anglais: " + allwords[k].trans + "."))
     
 }
 
