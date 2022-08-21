@@ -1,5 +1,6 @@
 body {
   background-color: rgb(126, 161, 255);
+  width:fit-content
 }
 p {
     color: rgb(0, 0, 0);
