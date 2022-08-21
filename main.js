@@ -7,7 +7,7 @@ var setwordbank = [{"word": "parole", "trans": "speech, word", "use": "noun"}];
 var wordbank = [];
 var allwords = [].concat(setwordbank, wordbank);
 var words = [];
-var defaultwords = [];
+var defaultwords = ['parole'];
 var wordsstrings = [].concat(words, defaultwords);
 
 function showadd(){
@@ -58,16 +58,25 @@ function wordsearch(){
     }
 }
 
+function generatenumb(){
+    var current_date, epocDate;
+
+         current_date = new Date();
+         var epocDate = new Date(new Date().getTime() / 1000);
+         var res = Math.abs(current_date - epocDate) / 1000;
+         var days = Math.floor(res / 86400);
+         return days
+}
+
 function wordoftheday(){
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
-    today = mm + '/' + dd + '/' + yyyy;
-    Math.Seedrandom(today);
-    const i = Math.random()*(wordsstrings.length)
-    console.log(Math.random())
-    //document.getElementById("wordoftheday").appendChild(document.createTextNode("Le mot du jour: " + allwords[i].word + "," + allwords[i].use + ". Anglais: " + allwords[i].trans + "."))
+    var rando = generatenumb() * new Date().getUTCMonth() * new Date().getUTCFullYear();
+    var i = rando%wordsstrings.length;
+    var j = 3 * i % wordsstrings.length;
+    var k = 12 * i % wordsstrings.length;
+    document.getElementById("wordoftheday").appendChild(document.createTextNode("Le 1er du jour: " + allwords[i].word + "," + allwords[i].use + ". Anglais: " + allwords[i].trans + "."))
+    document.getElementById("wordoftheday").appendChild(document.createTextNode("Le 2e du jour: " + allwords[j].word + "," + allwords[j].use + ". Anglais: " + allwords[j].trans + "."))
+    document.getElementById("wordoftheday").appendChild(document.createTextNode("Le 3e du jour: " + allwords[k].word + "," + allwords[k].use + ". Anglais: " + allwords[k].trans + "."))
+    
 }
 
 wordoftheday()
