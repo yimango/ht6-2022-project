@@ -1,18 +1,19 @@
 body {
   background-color: rgb(88, 115, 189);
-  width: 300px;
+  width: 400px;
 }
 p {
-    color: rgb(255, 255, 255);
+    color: rgb(181, 204, 234);
     font-family: 'Dosis', sans-serif;
     font-size:small;
     font-style: italic;
+    margin-bottom: 0px;
 }
 h3 {
     color:rgb(255, 255, 255);
     font-family: 'Dosis', sans-serif;
     font-size:large;
-    
+    margin-top: 0px;
 }
 
 #addWord {
@@ -28,5 +29,9 @@ h3 {
 }
 
 #thisword {
+    font-family: 'Dosis', sans-serif;
+}
+
+#cancel {
     font-family: 'Dosis', sans-serif;
 }
