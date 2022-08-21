@@ -12,8 +12,10 @@ p {
 h3 {
     color:rgb(255, 255, 255);
     font-family: 'Dosis', sans-serif;
-    font-size:large;
+    font-size:x-large;
     margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight:bold;
 }
 
 #addWord {
@@ -34,4 +36,37 @@ h3 {
 
 #cancel {
     font-family: 'Dosis', sans-serif;
+}
+
+#newword {
+    font-family: 'Dosis', sans-serif;
+}
+
+#newtrans {
+    font-family: 'Dosis', sans-serif;
+}
+
+#newuse {
+    font-family: 'Dosis', sans-serif;
+}
+
+#eng1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: medium;
+}
+
+#eng2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: medium;
+}
+
+#eng3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: medium;
 }
