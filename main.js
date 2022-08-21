@@ -1,7 +1,8 @@
 document.getElementById('addWord').addEventListener("click", showadd);
 document.getElementById('addthis').addEventListener("click", combine);
 document.getElementById("removeword").addEventListener("click", removeword);
-document.getElementById('thisword').addEventListener('click', wordsearch)
+document.getElementById('thisword').addEventListener('click', wordsearch);
+document.getElementById('cancel').addEventListener("click", revert);
 var wordbank = []
 var words = []
 console.log(chrome.storage.sync.get('wordobjects', function(obj){
@@ -27,6 +28,8 @@ function showadd(){
     document.getElementById('newuse').hidden = false;
     document.getElementById('addWord').hidden = true;
     document.getElementById('addthis').hidden = false;
+    document.getElementById('cancel').hidden = false;
+    document.getElementById('removeword').hidden = true;
 }
 
 function addword(){
@@ -65,6 +68,8 @@ function removeword(){
     document.getElementById('wordToBeRmvd').hidden = false;
     document.getElementById('removeword').hidden = true;
     document.getElementById('thisword').hidden = false;
+    document.getElementById('cancel').hidden = false;
+    document.getElementById('addWord').hidden = true;
 }
 
 function wordsearch(){
@@ -105,6 +110,18 @@ function wordoftheday(){
     document.getElementById("word3").appendChild(document.createTextNode(allwords[k].word + ", " + allwords[k].use + "."))
     document.getElementById("eng3").appendChild(document.createTextNode(allwords[k].trans))
     
+}
+
+function revert(){
+    document.getElementById('cancel').hidden = true;
+    document.getElementById('addWord').hidden = false;
+    document.getElementById('newword').hidden = true;
+    document.getElementById('newtrans').hidden = true;
+    document.getElementById('newuse').hidden = true;
+    document.getElementById('addthis').hidden = true;
+    document.getElementById('removeword').hidden = false;
+    document.getElementById('wordToBeRmvd').hidden = true;
+    document.getElementById('thisword').hidden = true;
 }
 
 wordoftheday()
