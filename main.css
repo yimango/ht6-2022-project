@@ -4,7 +4,28 @@ body {
 }
 p {
     color: rgb(255, 255, 255);
-    font-family: fantasy;
+    font-family: 'Dosis', sans-serif;
     font-size: medium;
 }
-addWord
+h3 {
+    color:rgb(255, 255, 255);
+    font-family: 'Dosis', sans-serif;
+    font-size:large;
+    
+}
+
+#addWord {
+    font-family: 'Dosis', sans-serif;
+}
+
+#addthis {
+    font-family: 'Dosis', sans-serif;
+}
+
+#removeword {
+    font-family: 'Dosis', sans-serif;
+}
+
+#thisword {
+    font-family: 'Dosis', sans-serif;
+}
