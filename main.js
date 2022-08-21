@@ -98,9 +98,12 @@ function wordoftheday(){
     var i = rando%wordsstrings.length;
     var j = 3 * i % wordsstrings.length;
     var k = 12 * i % wordsstrings.length;
-    document.getElementById("word1").appendChild(document.createTextNode(allwords[i].word + ", " + allwords[i].use + ". \n" + "Anglais: " + allwords[i].trans + "."))
-    document.getElementById("word2").appendChild(document.createTextNode(allwords[j].word + ", " + allwords[j].use + ". \n" + "Anglais: " + allwords[j].trans + "."))
-    document.getElementById("word3").appendChild(document.createTextNode(allwords[k].word + ", " + allwords[k].use + ". \n" + "Anglais: " + allwords[k].trans + "."))
+    document.getElementById("word1").appendChild(document.createTextNode(allwords[i].word + ", " + allwords[i].use + "."));
+    document.getElementById("eng1").appendChild(document.createTextNode(allwords[i].trans));
+    document.getElementById("word2").appendChild(document.createTextNode(allwords[j].word + ", " + allwords[j].use + "."))
+    document.getElementById("eng2").appendChild(document.createTextNode(allwords[j].trans))
+    document.getElementById("word3").appendChild(document.createTextNode(allwords[k].word + ", " + allwords[k].use + "."))
+    document.getElementById("eng3").appendChild(document.createTextNode(allwords[k].trans))
     
 }
 
