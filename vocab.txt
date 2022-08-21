@@ -1,4 +1,4 @@
-701.	parole	speech, word	noun
+701.	parole	speech, word	noun -> {"word": "parole", "trans": "speech, word", "use": "noun"}
 702.	triste	sad	adjective
 703.	honte	shame	noun
 704.	rouge	red	adjective
