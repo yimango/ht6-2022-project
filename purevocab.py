@@ -1,8 +1,7 @@
 myfile = open("vocabraw.txt", "r")
 #wordlist=[]
 linelist2=[]
-worddict = {}
-biglist=[]
+frenchwords = []
 
 for line in myfile:
     #testing1
@@ -13,15 +12,10 @@ for line in myfile:
     del linelist2[-1:]
     
     linelist2 = ''.join(linelist2)
-    linelist2 = linelist2.split('\t')
-    
-    worddict['word'] = linelist2[0]
-    worddict['trans'] = linelist2[1]
-    worddict['use'] = linelist2[2]
+    linelist2 = linelist2.split()
+    frenchwords.append(linelist2[0])
 
-    biglist.append(worddict)
     linelist2=[]
-    worddict={}
 
-print(biglist)
+print(frenchwords)
 myfile.close()
