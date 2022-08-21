@@ -530,7 +530,7 @@
 630.	toute	everything, all	indefinite adjective
 631.	dix	ten, tenth	numerical adjective
 632.	clé	key; solution	noun
-633.	agent	officer, oficial, agent	noun
+633.	agent	officer, official, agent	noun
 634.	approcher	to approach	verb
 635.	sens	direction, way; meaning; sense; senses	noun
 636.	craindre	to fear, to be afraid of	verb
