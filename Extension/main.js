@@ -106,7 +106,7 @@ function wordsearch(){
 
 
 function wordoftheday(){
-    var rando = new Date().getUTCDate() * new Date().getUTCMonth() * new Date().getUTCFullYear();
+    var rando = new Date().getUTCDate() + new Date().getUTCMonth() * new Date().getUTCFullYear();
     var i = rando%wordsstrings.length;
     var j = 3 * i % wordsstrings.length;
     var k = 12 * i % wordsstrings.length;

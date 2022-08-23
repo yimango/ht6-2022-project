@@ -1,7 +1,7 @@
 {
     "name": "Here I Crumb",
     "description": "Expand your French vocabulary 3 words a day",
-    "version": "1.01",
+    "version": "1.02",
     "manifest_version": 3,
     "permissions": ["storage"],
     "action":{
