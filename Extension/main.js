@@ -62,12 +62,7 @@ function createword(arr){
     }else{
         alert("Word already in list")
     }
-    chrome.storage.sync.set({'wordobjects': wordbank}, function(){
-        console.log("success")
-    })
-    chrome.storage.sync.set({'words': words}, function(){
-        console.log('success')
-    })
+
 
 }
 
@@ -108,18 +103,10 @@ function wordsearch(){
     
 }
 
-function generatenumb(){
-    var current_date, epocDate;
 
-         current_date = new Date();
-         var epocDate = new Date(new Date().getTime() / 1000);
-         var res = Math.abs(current_date - epocDate) / 1000;
-         var days = Math.floor(res / 86400);
-         return days
-}
 
 function wordoftheday(){
-    var rando = generatenumb() * new Date().getUTCMonth() * new Date().getUTCFullYear();
+    var rando = new Date().getUTCDate() * new Date().getUTCMonth() * new Date().getUTCFullYear();
     var i = rando%wordsstrings.length;
     var j = 3 * i % wordsstrings.length;
     var k = 12 * i % wordsstrings.length;
@@ -145,4 +132,3 @@ function revert(){
 }
 
 wordoftheday()
-console.log(words)
