@@ -1,7 +1,7 @@
 document.getElementById('addWord').addEventListener("click", showadd);
 document.getElementById('addthis').addEventListener("click", combine);
 document.getElementById("removeword").addEventListener("click", removeword);
-document.getElementById('thisword').addEventListener('click', wordsearch);
+document.getElementById('thisword').addEventListener("click", wordsearch);
 document.getElementById('cancel').addEventListener("click", revert);
 var wordbank = [];
 var words = [];
@@ -37,6 +37,10 @@ function addword(){
     var word = document.getElementById('newword').value;
     var trans = document.getElementById('newtrans').value;
     var use = document.getElementById('newuse').value;
+
+    document.getElementById('newword').value = '';
+    document.getElementById('newtrans').value = '';
+    document.getElementById('newuse').value = '';
     return [word, trans, use]
 }
 
@@ -80,6 +84,7 @@ function removeword(){
 
 function wordsearch(){
     var word = document.getElementById('wordToBeRmvd').value
+    document.getElementById('wordToBeRmvd').value = '';
     if (wordbank == undefined){
         wordbank = [];
     }
@@ -100,7 +105,6 @@ function wordsearch(){
     chrome.storage.sync.set({'words': words}, function(){
         console.log('success')
     })
-    
 }
 
 
